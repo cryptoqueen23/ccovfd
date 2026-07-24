@@ -1,28 +1,21 @@
-const menuButton = document.getElementById("menuButton");
-const mainNavigation = document.getElementById("mainNavigation");
-const currentYear = document.getElementById("currentYear");
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+const year = document.getElementById("year");
 
-if (currentYear) {
-  currentYear.textContent = new Date().getFullYear();
+if (year) {
+  year.textContent = new Date().getFullYear();
 }
 
-if (menuButton && mainNavigation) {
-  menuButton.addEventListener("click", () => {
-    const isOpen = mainNavigation.classList.toggle("open");
-
-    menuButton.setAttribute(
-      "aria-expanded",
-      String(isOpen)
-    );
-
-    menuButton.textContent = isOpen ? "✕" : "☰";
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  mainNavigation.querySelectorAll("a").forEach((link) => {
+  mainNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      mainNavigation.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.textContent = "☰";
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
     });
   });
 }

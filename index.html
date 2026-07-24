@@ -1,419 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Official website of the Coryell City/Osage Volunteer Fire Department."
-  >
+    content="Coryell City/Osage Volunteer Fire Department. Always ready. Always volunteer. Always here."
+  />
+  <title>CCOVFD | Coryell City/Osage Volunteer Fire Department</title>
 
-  <title>Coryell City/Osage Volunteer Fire Department</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
   <header class="site-header">
-    <div class="container nav-container">
-
+    <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="CCOVFD home">
-        <span class="brand-badge">CCOVFD</span>
+        <div class="brand-mark" aria-hidden="true">
+          <span>CCOVFD</span>
+        </div>
 
-        <span class="brand-text">
-          Coryell City/Osage
+        <div class="brand-copy">
+          <strong>Coryell City / Osage</strong>
           <small>Volunteer Fire Department</small>
-        </span>
+        </div>
       </a>
 
       <button
-        class="menu-button"
-        id="menuButton"
+        class="menu-toggle"
+        id="menuToggle"
         type="button"
-        aria-label="Open navigation menu"
+        aria-label="Open navigation"
         aria-expanded="false"
-        aria-controls="mainNavigation"
+        aria-controls="mainNav"
       >
-        ☰
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <nav class="main-nav" id="mainNavigation">
-        <a href="#about">About</a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
         <a href="#apparatus">Apparatus</a>
         <a href="#history">History</a>
         <a href="#events">Events</a>
         <a href="#join">Join Our Team</a>
       </nav>
 
+      <a class="header-cta" href="#home">CCOVFD</a>
     </div>
   </header>
 
   <main>
-
     <section class="hero" id="home">
-      <div class="hero-overlay"></div>
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-stars" aria-hidden="true"></div>
 
-      <div class="container hero-content">
-        <p class="eyebrow">
-          Serving our rural community since 2001
-        </p>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">We are your neighbors</p>
 
-        <h1>Neighbors Protecting Neighbors</h1>
+          <h1>
+            <span>Always Ready.</span>
+            <span>Always Volunteer.</span>
+            <span class="accent">Always Here.</span>
+          </h1>
 
-        <p class="hero-description">
-          The Coryell City/Osage Volunteer Fire Department proudly
-          protects lives and property through fire response, rescue,
-          medical assistance, and community service.
-        </p>
+          <p class="hero-text">
+            Proudly serving Coryell City, Osage, and the surrounding
+            community with courage, commitment, and care.
+          </p>
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="#join">
-            Join Our Team
-          </a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#join">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm10 0a4 4 0 1 0 0-8 4 4 0 0 0 0 0 8ZM7 13c-3.87 0-7 1.79-7 4v3h9v-3c0-1.12.43-2.15 1.16-3A9.5 9.5 0 0 0 7 13Zm10 0c-1.1 0-2.16.15-3.16.43A5.95 5.95 0 0 1 16 18v2h8v-3c0-2.21-3.13-4-7-4Zm-5 0c-3.31 0-6 1.79-6 4v3h12v-3c0-2.21-2.69-4-6-4Z"/>
+              </svg>
+              Join Our Team
+            </a>
 
-          <a class="button button-secondary" href="#about">
-            Learn More
-          </a>
+            <a class="button button-outline" href="#about">
+              Learn More
+              <span aria-hidden="true">›</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-strip-wrap">
+        <div class="container">
+          <div class="service-strip">
+            <article class="service-item">
+              <div class="service-icon">🔥</div>
+              <div>
+                <h2>Fire Response</h2>
+                <p>Protecting lives and property from fire.</p>
+              </div>
+            </article>
+
+            <article class="service-item">
+              <div class="service-icon">✚</div>
+              <div>
+                <h2>First Response</h2>
+                <p>Providing critical care when it matters most.</p>
+              </div>
+            </article>
+
+            <article class="service-item">
+              <div class="service-icon">🚒</div>
+              <div>
+                <h2>Rescue Operations</h2>
+                <p>Rapid response for accidents and emergencies.</p>
+              </div>
+            </article>
+
+            <article class="service-item">
+              <div class="service-icon">👥</div>
+              <div>
+                <h2>Community Focused</h2>
+                <p>Building safer communities through education.</p>
+              </div>
+            </article>
+
+            <article class="service-item">
+              <div class="service-icon">🛡️</div>
+              <div>
+                <h2>Volunteer Driven</h2>
+                <p>100% volunteers. 100% committed.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="emergency-banner">
-      <div class="container emergency-content">
-        <strong>Emergency?</strong>
-        <span>Call 911. Do not report emergencies through this website.</span>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container two-column">
-
+    <section class="content-section" id="about">
+      <div class="container content-grid">
         <div>
-          <p class="section-label">About CCOVFD</p>
-
-          <h2>Our Department</h2>
-
-          <p>
-            The Coryell City/Osage Volunteer Fire Department proudly
-            serves our rural community with dedication, courage, and
-            neighborly care.
-          </p>
-
-          <p>
-            Established in 2001, our department is made up of local
-            men and women who volunteer their time to protect lives
-            and property through fire suppression, rescue operations,
-            medical emergency response, and public safety assistance.
-          </p>
-
-          <p>
-            In a small town, every call is personal. We are not only
-            firefighters. We are your friends, family members,
-            coworkers, and neighbors.
-          </p>
-
-          <p>
-            Through ongoing training, teamwork, and community
-            involvement, we work hard to keep Coryell City, Osage,
-            and the surrounding area safe and prepared.
-          </p>
+          <p class="section-kicker">About CCOVFD</p>
+          <h2>Neighbors protecting neighbors since 2001.</h2>
         </div>
 
-        <div class="photo-card">
-          <img
-            src="images/fire-department.jpg"
-            alt="Coryell City Osage Volunteer Fire Department"
-          >
+        <div class="content-copy">
+          <p>
+            The Coryell City/Osage Volunteer Fire Department serves our rural
+            community through fire suppression, rescue operations, emergency
+            medical response, and public safety support.
+          </p>
 
-          <div class="photo-caption">
-            Courage. Service. Community.
-          </div>
+          <p>
+            Our department is made up of local men and women who volunteer their
+            time, train year-round, and answer the call when their neighbors need
+            them most.
+          </p>
         </div>
-
       </div>
     </section>
 
-    <section class="section section-dark" id="services">
+    <section class="fleet-section" id="apparatus">
       <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Our Fleet</p>
+          <h2>Apparatus</h2>
+          <p>
+            Built for rural response, wildland fires, rescues, water supply, and
+            emergency command.
+          </p>
+        </div>
 
-        <p class="section-label section-label-light">
-          How We Serve
-        </p>
-
-        <h2>Emergency Services</h2>
-
-        <div class="card-grid">
-
-          <article class="service-card">
-            <div class="service-icon">🔥</div>
-            <h3>Fire Response</h3>
-            <p>
-              Structure fires, grass fires, vehicle fires, and
-              wildfire response throughout our rural service area.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">🚒</div>
-            <h3>Rescue Operations</h3>
-            <p>
-              Vehicle accidents, emergency extrication, hazardous
-              situations, and assistance to neighboring departments.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">✚</div>
-            <h3>Medical Response</h3>
-            <p>
-              Emergency medical assistance and support until
-              additional medical personnel arrive.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">🏡</div>
-            <h3>Community Support</h3>
-            <p>
-              Fire prevention education, safety demonstrations,
-              public events, and community outreach.
-            </p>
-          </article>
-
+        <div class="fleet-grid">
+          <article class="fleet-card"><span>Utility 40</span><h3>2000 Chevrolet Silverado</h3></article>
+          <article class="fleet-card"><span>Brush 41</span><h3>2016 Ford F-550</h3></article>
+          <article class="fleet-card"><span>Brush 42</span><h3>1993 BMY</h3></article>
+          <article class="fleet-card"><span>Engine 43</span><h3>2008 International 4400</h3></article>
+          <article class="fleet-card"><span>Tender 44</span><h3>2008 International 7400</h3></article>
+          <article class="fleet-card"><span>Brush 45</span><h3>2008 Ford F-550</h3></article>
+          <article class="fleet-card"><span>Rescue 46</span><h3>2007 Chevrolet One-Ton</h3></article>
+          <article class="fleet-card"><span>Command 1</span><h3>Command Unit</h3></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="apparatus">
-      <div class="container">
-
-        <p class="section-label">Our Equipment</p>
-        <h2>Apparatus</h2>
-
-        <p class="section-intro">
-          Meet the trucks, equipment, and tools our volunteers use
-          to protect the community.
-        </p>
-
-        <div class="apparatus-grid">
-
-          <article class="apparatus-card">
-            <img
-              src="images/engine.jpg"
-              alt="CCOVFD fire engine"
-            >
-
-            <div class="apparatus-content">
-              <h3>Engine</h3>
-              <p>
-                Primary fire suppression apparatus equipped for
-                structure fires, vehicle fires, and emergency response.
-              </p>
-            </div>
-          </article>
-
-          <article class="apparatus-card">
-            <img
-              src="images/brush-truck.jpg"
-              alt="CCOVFD brush truck"
-            >
-
-            <div class="apparatus-content">
-              <h3>Brush Truck</h3>
-              <p>
-                Designed for grass fires, wildland fires, and rural
-                areas that may be difficult for larger apparatus to reach.
-              </p>
-            </div>
-          </article>
-
-          <article class="apparatus-card">
-            <img
-              src="images/rescue-truck.jpg"
-              alt="CCOVFD rescue vehicle"
-            >
-
-            <div class="apparatus-content">
-              <h3>Rescue Unit</h3>
-              <p>
-                Carries rescue tools, medical supplies, and equipment
-                for vehicle accidents and other emergencies.
-              </p>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-muted" id="history">
-      <div class="container history-layout">
-
+    <section class="history-section" id="history">
+      <div class="container history-grid">
+        <div class="history-year">2001</div>
         <div>
-          <p class="section-label">Our Story</p>
-          <h2>Serving Since 2001</h2>
-
+          <p class="section-kicker">Our History</p>
+          <h2>Built by volunteers. Sustained by community.</h2>
           <p>
-            The Coryell City/Osage Volunteer Fire Department was
-            established in 2001 to provide dependable emergency
-            services to our rural community.
-          </p>
-
-          <p>
-            Since then, generations of volunteers have answered the
-            call, trained together, maintained equipment, and supported
-            neighbors during some of their most difficult moments.
-          </p>
-
-          <p>
-            Our equipment and training continue to grow, but our
-            mission remains the same: protect our community and take
-            care of one another.
+            CCOVFD was established to bring dependable emergency response to
+            Coryell City, Osage, and the surrounding rural area. The mission is
+            simple: protect life, protect property, and take care of one another.
           </p>
         </div>
-
-        <div class="history-year">
-          <span>Established</span>
-          <strong>2001</strong>
-        </div>
-
       </div>
     </section>
 
-    <section class="section" id="events">
-      <div class="container">
+    <section class="events-section" id="events">
+      <div class="container section-heading">
+        <p class="section-kicker">Community</p>
+        <h2>Events and Updates</h2>
+        <p>
+          Fundraisers, public safety events, department announcements, and
+          community programs will be posted here.
+        </p>
 
-        <p class="section-label">Community Calendar</p>
-        <h2>Upcoming Events</h2>
-
-        <div class="event-card">
-          <div class="event-date">
-            <span>Coming</span>
-            <strong>Soon</strong>
-          </div>
-
-          <div>
-            <h3>Department and Community Events</h3>
-
-            <p>
-              Fundraisers, public safety programs, community events,
-              and department announcements will be posted here.
-            </p>
-          </div>
+        <div class="coming-soon-card">
+          <span>Coming Soon</span>
+          <h3>Follow CCOVFD for upcoming events.</h3>
         </div>
-
       </div>
     </section>
 
     <section class="join-section" id="join">
-      <div class="container join-content">
-
+      <div class="container join-grid">
         <div>
-          <p class="section-label section-label-light">
-            Volunteer With Us
-          </p>
-
-          <h2>Your Community Needs You</h2>
-
+          <p class="section-kicker light">Volunteer With Us</p>
+          <h2>Your community needs people willing to answer the call.</h2>
           <p>
-            You do not need to be a lifelong firefighter to make a
-            difference. CCOVFD depends on dedicated community members
-            who are willing to learn, train, and serve.
-          </p>
-
-          <p>
-            Whether you are interested in emergency response,
-            department support, fundraising, or community events,
-            there may be a place for you on our team.
-          </p>
-
-          <p class="join-highlight">
-            Training is provided. Commitment matters.
+            No prior firefighting experience is required. Training is provided.
+            Commitment, teamwork, and a heart for service matter most.
           </p>
         </div>
 
         <div class="join-card">
-          <h3>Interested in Volunteering?</h3>
-
+          <h3>Ready to serve?</h3>
           <p>
-            Contact the department or visit us during an upcoming
-            meeting to learn about membership requirements.
+            Contact CCOVFD to learn about membership, training, and support roles.
           </p>
-
-          <a
-            class="button button-light"
-            href="mailto:your-email@example.com"
-          >
-            Contact CCOVFD
+          <a class="button button-primary" href="mailto:your-email@example.com">
+            Contact the Department
           </a>
         </div>
-
       </div>
     </section>
-
-    <section class="section social-section">
-      <div class="container social-content">
-
-        <div>
-          <p class="section-label">Stay Connected</p>
-          <h2>Follow Us on Social Media</h2>
-
-          <p>
-            Follow CCOVFD for department updates, safety information,
-            event announcements, and volunteer opportunities.
-          </p>
-        </div>
-
-        <div class="coming-soon">
-          Social media pages coming soon
-        </div>
-
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-content">
+    <div class="container footer-grid">
+      <div>
+        <strong>CCOVFD</strong>
+        <p>Coryell City/Osage Volunteer Fire Department</p>
+      </div>
 
       <div>
-        <strong>
-          Coryell City/Osage Volunteer Fire Department
-        </strong>
-
-        <p>
-          Proudly serving our community since 2001.
-        </p>
+        <p>For emergencies, call <strong>911</strong>.</p>
+        <p>© <span id="year"></span> CCOVFD</p>
       </div>
-
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#apparatus">Apparatus</a>
-        <a href="#events">Events</a>
-        <a href="#join">Volunteer</a>
-      </div>
-
-    </div>
-
-    <div class="container footer-bottom">
-      <p>
-        © <span id="currentYear"></span>
-        Coryell City/Osage Volunteer Fire Department.
-      </p>
-
-      <p>
-        For emergencies, call 911.
-      </p>
     </div>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
