@@ -3,47 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Coryell City/Osage Volunteer Fire Department. Always ready. Always volunteer. Always here."
-  />
+  <meta name="description" content="Coryell City/Osage Volunteer Fire Department" />
   <title>CCOVFD | Coryell City/Osage Volunteer Fire Department</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="CCOVFD home">
-        <div class="brand-mark" aria-hidden="true">
-          <span>CCOVFD</span>
-        </div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <div class="brand-copy">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="CCOVFD home">
+        <span class="brand-badge" aria-hidden="true">CCOVFD</span>
+        <span class="brand-copy">
           <strong>Coryell City / Osage</strong>
           <small>Volunteer Fire Department</small>
-        </div>
+        </span>
       </a>
 
       <button
-        class="menu-toggle"
-        id="menuToggle"
+        class="menu-button"
+        id="menuButton"
         type="button"
-        aria-label="Open navigation"
         aria-expanded="false"
         aria-controls="mainNav"
+        aria-label="Open navigation menu"
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
 
       <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
@@ -53,176 +39,150 @@
         <a href="#join">Join Our Team</a>
       </nav>
 
-      <a class="header-cta" href="#home">CCOVFD</a>
+      <a class="header-cta" href="#join">CCOVFD</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-image" aria-hidden="true"></div>
-      <div class="hero-shade" aria-hidden="true"></div>
-      <div class="hero-stars" aria-hidden="true"></div>
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-media" role="img" aria-label="Members of the Coryell City and Osage Volunteer Fire Department standing together in front of fire apparatus"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-      <div class="container hero-grid">
+      <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">We are your neighbors</p>
+          <p class="eyebrow">Proudly serving since 2001</p>
 
-          <h1>
-            <span>Always Ready.</span>
-            <span>Always Volunteer.</span>
-            <span class="accent">Always Here.</span>
+          <h1 id="hero-title">
+            <span>Coryell City / Osage</span>
+            <span>Volunteer Fire</span>
+            <span class="accent">Department</span>
           </h1>
 
-          <p class="hero-text">
-            Proudly serving Coryell City, Osage, and the surrounding
-            community with courage, commitment, and care.
+          <p class="hero-description">
+            Local volunteers protecting lives, property, and neighbors
+            through fire response, rescue operations, emergency medical
+            support, and public service.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#join">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm10 0a4 4 0 1 0 0-8 4 4 0 0 0 0 0 8ZM7 13c-3.87 0-7 1.79-7 4v3h9v-3c0-1.12.43-2.15 1.16-3A9.5 9.5 0 0 0 7 13Zm10 0c-1.1 0-2.16.15-3.16.43A5.95 5.95 0 0 1 16 18v2h8v-3c0-2.21-3.13-4-7-4Zm-5 0c-3.31 0-6 1.79-6 4v3h12v-3c0-2.21-2.69-4-6-4Z"/>
-              </svg>
-              Join Our Team
-            </a>
-
-            <a class="button button-outline" href="#about">
-              Learn More
-              <span aria-hidden="true">›</span>
-            </a>
+            <a class="button button-primary" href="#join">Join Our Team</a>
+            <a class="button button-secondary" href="#about">Learn More</a>
           </div>
         </div>
       </div>
 
-      <div class="service-strip-wrap">
-        <div class="container">
-          <div class="service-strip">
-            <article class="service-item">
-              <div class="service-icon">🔥</div>
-              <div>
-                <h2>Fire Response</h2>
-                <p>Protecting lives and property from fire.</p>
-              </div>
-            </article>
+      <div class="services-panel" aria-label="Department services">
+        <div class="container services-grid">
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">🔥</span>
+            <div>
+              <h2>Fire Response</h2>
+              <p>Protecting lives and property from fire.</p>
+            </div>
+          </article>
 
-            <article class="service-item">
-              <div class="service-icon">✚</div>
-              <div>
-                <h2>First Response</h2>
-                <p>Providing critical care when it matters most.</p>
-              </div>
-            </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">✚</span>
+            <div>
+              <h2>First Response</h2>
+              <p>Providing critical care when it matters most.</p>
+            </div>
+          </article>
 
-            <article class="service-item">
-              <div class="service-icon">🚒</div>
-              <div>
-                <h2>Rescue Operations</h2>
-                <p>Rapid response for accidents and emergencies.</p>
-              </div>
-            </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">🚒</span>
+            <div>
+              <h2>Rescue Operations</h2>
+              <p>Rapid response for accidents and emergencies.</p>
+            </div>
+          </article>
 
-            <article class="service-item">
-              <div class="service-icon">👥</div>
-              <div>
-                <h2>Community Focused</h2>
-                <p>Building safer communities through education.</p>
-              </div>
-            </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">👥</span>
+            <div>
+              <h2>Community Focused</h2>
+              <p>Building safer communities through education.</p>
+            </div>
+          </article>
 
-            <article class="service-item">
-              <div class="service-icon">🛡️</div>
-              <div>
-                <h2>Volunteer Driven</h2>
-                <p>100% volunteers. 100% committed.</p>
-              </div>
-            </article>
-          </div>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">🛡️</span>
+            <div>
+              <h2>Volunteer Driven</h2>
+              <p>100% volunteers. 100% committed.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="about">
-      <div class="container content-grid">
+    <section class="section light" id="about">
+      <div class="container split">
         <div>
-          <p class="section-kicker">About CCOVFD</p>
+          <p class="section-label">About CCOVFD</p>
           <h2>Neighbors protecting neighbors since 2001.</h2>
         </div>
-
-        <div class="content-copy">
+        <div>
           <p>
             The Coryell City/Osage Volunteer Fire Department serves our rural
-            community through fire suppression, rescue operations, emergency
-            medical response, and public safety support.
+            community through fire suppression, rescue operations, medical
+            emergency response, and public safety support.
           </p>
-
           <p>
             Our department is made up of local men and women who volunteer their
-            time, train year-round, and answer the call when their neighbors need
-            them most.
+            time, train year-round, and answer the call when their neighbors need them.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="fleet-section" id="apparatus">
+    <section class="section dark" id="apparatus">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Our Fleet</p>
-          <h2>Apparatus</h2>
-          <p>
-            Built for rural response, wildland fires, rescues, water supply, and
-            emergency command.
-          </p>
-        </div>
+        <p class="section-label">Our Fleet</p>
+        <h2>Apparatus</h2>
 
-        <div class="fleet-grid">
-          <article class="fleet-card"><span>Utility 40</span><h3>2000 Chevrolet Silverado</h3></article>
-          <article class="fleet-card"><span>Brush 41</span><h3>2016 Ford F-550</h3></article>
-          <article class="fleet-card"><span>Brush 42</span><h3>1993 BMY</h3></article>
-          <article class="fleet-card"><span>Engine 43</span><h3>2008 International 4400</h3></article>
-          <article class="fleet-card"><span>Tender 44</span><h3>2008 International 7400</h3></article>
-          <article class="fleet-card"><span>Brush 45</span><h3>2008 Ford F-550</h3></article>
-          <article class="fleet-card"><span>Rescue 46</span><h3>2007 Chevrolet One-Ton</h3></article>
-          <article class="fleet-card"><span>Command 1</span><h3>Command Unit</h3></article>
+        <div class="apparatus-grid">
+          <article><span>Utility 40</span><h3>2000 Chevrolet Silverado</h3></article>
+          <article><span>Brush 41</span><h3>2016 Ford F-550</h3></article>
+          <article><span>Brush 42</span><h3>1993 BMY</h3></article>
+          <article><span>Engine 43</span><h3>2008 International 4400</h3></article>
+          <article><span>Tender 44</span><h3>2008 International 7400</h3></article>
+          <article><span>Brush 45</span><h3>2008 Ford F-550</h3></article>
+          <article><span>Rescue 46</span><h3>2007 Chevrolet One-Ton</h3></article>
+          <article><span>Command 1</span><h3>Command Unit</h3></article>
         </div>
       </div>
     </section>
 
-    <section class="history-section" id="history">
-      <div class="container history-grid">
-        <div class="history-year">2001</div>
+    <section class="section light" id="history">
+      <div class="container split history">
+        <div class="year-block" aria-label="Established in 2001">2001</div>
         <div>
-          <p class="section-kicker">Our History</p>
+          <p class="section-label">Our History</p>
           <h2>Built by volunteers. Sustained by community.</h2>
           <p>
-            CCOVFD was established to bring dependable emergency response to
-            Coryell City, Osage, and the surrounding rural area. The mission is
-            simple: protect life, protect property, and take care of one another.
+            CCOVFD was established to provide dependable emergency response
+            to Coryell City, Osage, and nearby rural areas.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="events-section" id="events">
-      <div class="container section-heading">
-        <p class="section-kicker">Community</p>
+    <section class="section dark" id="events">
+      <div class="container">
+        <p class="section-label">Community</p>
         <h2>Events and Updates</h2>
-        <p>
-          Fundraisers, public safety events, department announcements, and
-          community programs will be posted here.
-        </p>
-
-        <div class="coming-soon-card">
-          <span>Coming Soon</span>
-          <h3>Follow CCOVFD for upcoming events.</h3>
+        <div class="notice-card">
+          <strong>Coming Soon</strong>
+          <p>Fundraisers, safety events, and department announcements will appear here.</p>
         </div>
       </div>
     </section>
 
-    <section class="join-section" id="join">
-      <div class="container join-grid">
+    <section class="section join" id="join">
+      <div class="container split">
         <div>
-          <p class="section-kicker light">Volunteer With Us</p>
+          <p class="section-label">Volunteer With Us</p>
           <h2>Your community needs people willing to answer the call.</h2>
           <p>
             No prior firefighting experience is required. Training is provided.
@@ -232,9 +192,7 @@
 
         <div class="join-card">
           <h3>Ready to serve?</h3>
-          <p>
-            Contact CCOVFD to learn about membership, training, and support roles.
-          </p>
+          <p>Contact CCOVFD to learn about membership and support roles.</p>
           <a class="button button-primary" href="mailto:your-email@example.com">
             Contact the Department
           </a>
@@ -249,14 +207,11 @@
         <strong>CCOVFD</strong>
         <p>Coryell City/Osage Volunteer Fire Department</p>
       </div>
-
       <div>
         <p>For emergencies, call <strong>911</strong>.</p>
         <p>© <span id="year"></span> CCOVFD</p>
       </div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -1,20 +1,35 @@
-# CCOVFD Landing Page
+# CCOVFD Final Website
 
-Static landing page for the Coryell City/Osage Volunteer Fire Department.
+Complete static website for the Coryell City/Osage Volunteer Fire Department.
+
+## Included
+
+- Corrected real CCOVFD team photo in the hero
+- Responsive layout for phones, tablets, laptops, desktops, and ultrawide screens
+- WCAG-minded keyboard navigation
+- Skip-to-content link
+- Visible keyboard focus styles
+- Reduced-motion support
+- Semantic HTML
+- Mobile navigation menu
+- Apparatus, history, events, volunteer, and footer sections
+- No framework, database, npm, or build process required
 
 ## Files
 
 - `index.html`
 - `styles.css`
 - `script.js`
-- `images/ccovfd-hero.png`
+- `images/hero-team.jpg`
 
-## Publish with GitHub Pages
+## Before publishing
 
-1. Upload all files to the root of your repository.
-2. Open **Settings → Pages**.
-3. Select **Deploy from a branch**.
-4. Choose `main` and `/root`.
-5. Save.
+Replace `your-email@example.com` in `index.html` with the department's real email address.
 
-Replace `your-email@example.com` in `index.html` with the department's real email.
+## GitHub Pages
+
+Upload the contents of this folder to the repository root.
+
+Then open:
+
+Settings → Pages → Deploy from a branch → `main` → `/root`
