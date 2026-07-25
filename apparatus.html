@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Coryell City/Osage Volunteer Fire Department">
-  <title>CCOVFD | Coryell City/Osage Volunteer Fire Department</title>
+  <meta name="description" content="Apparatus fleet of the Coryell City/Osage Volunteer Fire Department">
+  <title>Apparatus | CCOVFD | Coryell City/Osage Volunteer Fire Department</title>
 
   <style>
     :root {
@@ -784,6 +784,16 @@
         transition-duration: .01ms !important;
       }
     }
+
+    .page-top {
+      margin-top: 76px;
+    }
+
+    @media (max-width: 760px) {
+      .page-top {
+        margin-top: 66px;
+      }
+    }
   </style>
 </head>
 
@@ -792,7 +802,7 @@
 
   <header class="site-header">
     <div class="container nav-shell">
-      <a class="brand" href="#home" aria-label="CCOVFD home">
+      <a class="brand" href="index.html" aria-label="CCOVFD home">
         <img class="brand-badge" src="images/logo.png" alt="Coryell City/Osage Volunteer Fire Department badge">
         <span class="brand-copy">
           <strong>Coryell City / Osage</strong>
@@ -816,195 +826,86 @@
       </button>
 
       <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
-        <a href="apparatus.html">Apparatus</a>
-        <a href="#history">History</a>
+        <a href="apparatus.html" aria-current="page">Apparatus</a>
+        <a href="index.html#history">History</a>
         <a href="https://www.facebook.com/profile.php?id=100081608297448&sk=events" target="_blank" rel="noopener noreferrer">Events</a>
         <a href="tel:+12542481177" aria-label="Join our team: call (254) 248-1177">Join Our Team</a>
         <a href="tel:+12542481177" aria-label="Contact CCOVFD: call (254) 248-1177">Contact</a>
       </nav>
     </div>
   </header>
-
   <main id="main-content">
-    <section
-      class="hero-image"
-      id="home"
-      aria-label="Members of the Coryell City and Osage Volunteer Fire Department standing together in front of fire apparatus"
-    ></section>
-
-    <section class="intro" aria-labelledby="hero-title">
+    <section class="section dark page-top" id="apparatus">
       <div class="container">
-        <div class="intro-inner">
-          <p class="eyebrow">Serving our community since 2001</p>
+        <p class="section-label">Our Fleet</p>
+        <h2>Ready for the call.</h2>
 
-          <h1 id="hero-title">
-            <span>Neighbors Serving</span>
-            <span class="accent">Neighbors.</span>
-          </h1>
+        <div class="apparatus-grid">
+          <article class="apparatus-card">
+            <div class="apparatus-photo">
+              <img
+                src="images/apparatus-utility-40.jpg"
+                alt="Utility 40, a white CCOVFD crew-cab pickup truck with a red stripe and department crest, parked outside the station"
+                loading="lazy"
+              />
+            </div>
+            <div class="apparatus-info"><span>Utility 40</span><h3>2000 Chevrolet Silverado</h3></div>
+          </article>
 
-          <p class="hero-tagline">Always Ready.</p>
-          <div class="hero-divider" aria-hidden="true"></div>
+          <article class="apparatus-card">
+            <div class="apparatus-photo">
+              <img
+                src="images/apparatus-brush-41.jpg"
+                alt="Brush 41, a red Ford F-550 grass fire truck with a rear skid unit and tool storage, parked at sunset outside the station"
+                loading="lazy"
+              />
+            </div>
+            <div class="apparatus-info"><span>Brush 41</span><h3>2016 Ford F-550</h3></div>
+          </article>
 
-          <p class="intro-text">
-            The Coryell City/Osage Volunteer Fire Department protects lives,
-            property, and our rural community through fire response, rescue,
-            emergency medical support, and public service.
-          </p>
+          <article class="apparatus-card">
+            <div class="apparatus-photo">
+              <img
+                src="images/apparatus-tender-44.jpg"
+                alt="Tender 44, a yellow and red International water tanker truck parked in a field at sunset"
+                loading="lazy"
+              />
+            </div>
+            <div class="apparatus-info"><span>Tender 44</span><h3>2008 International 7400</h3></div>
+          </article>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="tel:+12542481177" aria-label="Join our team: call (254) 248-1177">Join Our Team</a>
-            <a class="button button-secondary" href="apparatus.html">View Apparatus</a>
-          </div>
-        </div>
-      </div>
-    </section>
+          <article class="apparatus-card">
+            <div class="apparatus-photo">
+              <img
+                src="images/apparatus-brush-45.jpg"
+                alt="Brush 45, a red Ford F-550 brush truck with diamond-plate tool boxes, parked outside the station"
+                loading="lazy"
+              />
+            </div>
+            <div class="apparatus-info"><span>Brush 45</span><h3>2008 Ford F-550</h3></div>
+          </article>
 
-    <section class="services" aria-label="Department services">
-      <div class="container services-grid">
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">🔥</span>
-          <div>
-            <h2>Fire Response</h2>
-            <p>Protecting lives and property from fire.</p>
-          </div>
-        </article>
+          <article class="apparatus-card">
+            <div class="apparatus-photo">
+              <img
+                src="images/apparatus-rescue-46.jpg"
+                alt="Rescue 46, a white heavy rescue truck with a red stripe and enclosed equipment body"
+                loading="lazy"
+              />
+            </div>
+            <div class="apparatus-info"><span>Rescue 46</span><h3>2007 Chevrolet One-Ton</h3></div>
+          </article>
 
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">✚</span>
-          <div>
-            <h2>First Response</h2>
-            <p>Providing care when it matters most.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">🚒</span>
-          <div>
-            <h2>Rescue Operations</h2>
-            <p>Responding to accidents and emergencies.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">👥</span>
-          <div>
-            <h2>Community Service</h2>
-            <p>Supporting safety, education, and preparedness.</p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">🛡️</span>
-          <div>
-            <h2>Volunteer Proud</h2>
-            <p>Local people answering the call.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section light" id="about">
-      <div class="container split">
-        <div>
-          <p class="section-label">About CCOVFD</p>
-          <h2>Local volunteers. Real commitment.</h2>
-        </div>
-
-        <div>
-          <p>
-            The Coryell City/Osage Volunteer Fire Department serves our rural
-            community with dedication, courage, and neighborly care.
-          </p>
-          <p>
-            Our volunteers train year-round and respond to fires, rescues,
-            medical emergencies, vehicle accidents, and other calls for help.
-            In a small town, every call is personal.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light" id="history">
-      <div class="container split">
-        <div class="history-media">
-          <video
-            id="historyVideo"
-            class="history-video"
-            poster="images/history-2001-poster.jpg"
-            muted
-            loop
-            playsinline
-            aria-label="CCOVFD members with an Air Evac helicopter, marking the department's founding in 2001"
-          >
-            <source src="images/history-2001.mp4" type="video/mp4" />
-          </video>
-          <button
-            class="video-toggle"
-            id="historyVideoToggle"
-            type="button"
-            aria-pressed="false"
-          >
-            <span id="historyVideoToggleLabel">Play video</span>
-          </button>
-          <span class="year-badge" aria-hidden="true">2001</span>
-        </div>
-
-        <div>
-          <p class="section-label">Our History</p>
-          <h2>Built here. Serving here.</h2>
-          <p>
-            CCOVFD was established to provide dependable emergency response
-            to Coryell City, Osage, and nearby rural areas. Our equipment,
-            training, and capabilities have grown, but the mission remains
-            the same: take care of our neighbors.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark" id="events">
-      <div class="container">
-        <p class="section-label">Community</p>
-        <h2>Events and updates.</h2>
-
-        <div class="notice-card">
-          <strong>See what's happening</strong>
-          <p>
-            Fundraisers, public safety events, training announcements, and
-            department updates are posted on our Facebook page.
-          </p>
-          <a
-            class="button button-primary"
-            href="https://www.facebook.com/profile.php?id=100081608297448&sk=events"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Events on Facebook
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section join" id="join">
-      <div class="container split">
-        <div>
-          <p class="section-label">Volunteer With Us</p>
-          <h2>There is a place for you.</h2>
-          <p>
-            No prior firefighting experience is required. Training is provided.
-            What matters most is commitment, teamwork, and a willingness to serve.
-          </p>
-        </div>
-
-        <div class="join-card">
-          <h3>Ready to learn more?</h3>
-          <p>
-            Contact CCOVFD for information about membership, training,
-            department support, and volunteer opportunities.
-          </p>
-          <a class="button button-primary" href="mailto:ccovfd@hotmail.com">
-            Contact the Department
-          </a>
+          <article class="apparatus-card">
+            <div class="apparatus-photo">
+              <img
+                src="images/apparatus-command-1.jpg"
+                alt="Command 1, a red Chevrolet 3500 utility truck with a light bar and equipment boxes, parked in a field"
+                loading="lazy"
+              />
+            </div>
+            <div class="apparatus-info"><span>Command 1</span><h3>Command Unit</h3></div>
+          </article>
         </div>
       </div>
     </section>
