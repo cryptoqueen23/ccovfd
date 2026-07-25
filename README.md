@@ -17,10 +17,8 @@ Complete static website for the Coryell City/Osage Volunteer Fire Department.
 
 ## Files
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `images/hero-team.jpg`
+- `index.html` — single self-contained file (inline CSS and JS, hero photo embedded as base64)
+- `images/` — department logo, apparatus/event photos, and other assets
 
 ## Before publishing
 
