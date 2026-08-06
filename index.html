@@ -477,54 +477,6 @@
       font-weight: 900;
     }
 
-    .history-media {
-      position: relative;
-      min-height: 230px;
-      overflow: hidden;
-      border: 6px solid var(--red);
-    }
-
-    .history-video {
-      display: block;
-      width: 100%;
-      height: 100%;
-      min-height: 230px;
-      object-fit: cover;
-      background: var(--ink);
-    }
-
-    .year-badge {
-      position: absolute;
-      left: 16px;
-      bottom: 16px;
-      padding: 5px 14px;
-      color: var(--white);
-      background: var(--red);
-      font-size: 26px;
-      font-weight: 900;
-      box-shadow: 0 6px 16px rgba(0,0,0,.4);
-    }
-
-    .video-toggle {
-      position: absolute;
-      right: 16px;
-      bottom: 16px;
-      min-height: 44px;
-      padding: 10px 18px;
-      color: var(--white);
-      background: rgba(5,9,13,.75);
-      border: 1px solid rgba(255,255,255,.5);
-      border-radius: 4px;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
-
-    .video-toggle:hover {
-      background: rgba(5,9,13,.92);
-    }
-
     .notice-card,
     .join-card {
       margin-top: 24px;
@@ -547,6 +499,10 @@
       display: flex;
       justify-content: space-between;
       gap: 28px;
+    }
+
+    .history-content {
+      max-width: 820px;
     }
 
     .footer-brand {
@@ -925,30 +881,7 @@
     </section>
 
     <section class="section light" id="history">
-      <div class="container split">
-        <div class="history-media">
-          <video
-            id="historyVideo"
-            class="history-video"
-            poster="images/history-2001-poster.jpg"
-            muted
-            loop
-            playsinline
-            aria-label="CCOVFD members with an Air Evac helicopter, marking the department's founding in 2001"
-          >
-            <source src="images/history-2001.mp4" type="video/mp4" />
-          </video>
-          <button
-            class="video-toggle"
-            id="historyVideoToggle"
-            type="button"
-            aria-pressed="false"
-          >
-            <span id="historyVideoToggleLabel">Play video</span>
-          </button>
-          <span class="year-badge" aria-hidden="true">2001</span>
-        </div>
-
+      <div class="container history-content">
         <div>
           <p class="section-label">Our History</p>
           <h2>Built here. Serving here.</h2>
@@ -1104,29 +1037,6 @@
         menuButton.focus();
       }
     });
-
-    const historyVideo = document.getElementById("historyVideo");
-    const historyVideoToggle = document.getElementById("historyVideoToggle");
-    const historyVideoToggleLabel = document.getElementById("historyVideoToggleLabel");
-
-    if (historyVideo && historyVideoToggle && historyVideoToggleLabel) {
-      historyVideoToggle.addEventListener("click", () => {
-        if (historyVideo.paused) {
-          historyVideo.play();
-          historyVideoToggle.setAttribute("aria-pressed", "true");
-          historyVideoToggleLabel.textContent = "Pause video";
-        } else {
-          historyVideo.pause();
-          historyVideoToggle.setAttribute("aria-pressed", "false");
-          historyVideoToggleLabel.textContent = "Play video";
-        }
-      });
-
-      historyVideo.addEventListener("ended", () => {
-        historyVideoToggle.setAttribute("aria-pressed", "false");
-        historyVideoToggleLabel.textContent = "Play video";
-      });
-    }
   </script>
 </body>
 </html>
